@@ -131,13 +131,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 1108734309}
     m_Modifications:
     - target: {fileID: 378779694613860676, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 1735293233}
+    - target: {fileID: 378779694613860676, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 378779694613860676, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 378779694613860676, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1735293236}
     - target: {fileID: 378779694613860676, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -252,6 +260,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 9146024212887953586, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 753718976}
+    - target: {fileID: 9146024212887953586, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: tourNext
+      value: 
+      objectReference: {fileID: 583201832}
+    - target: {fileID: 9146024212887953586, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: tourCurrent
+      value: 
+      objectReference: {fileID: 1108734304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
 --- !u!224 &52787333 stripped
@@ -259,6 +279,52 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 378779695306291016, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
   m_PrefabInstance: {fileID: 52787332}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &225297422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225297423}
+  - component: {fileID: 225297424}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &225297423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225297422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &225297424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225297422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cefea23ff4b1834c940b7925791abe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  tourCurrent: {fileID: 0}
+  tourNext: {fileID: 0}
 --- !u!1 &324297214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,6 +2300,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1735293233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 378779694613860677, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+  m_PrefabInstance: {fileID: 378779696314804340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1735293236 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9146024212887953586, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+  m_PrefabInstance: {fileID: 378779696314804340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cefea23ff4b1834c940b7925791abe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &87053269666835717 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1063780122087247054, guid: 246ccbfe92c712042b9fb055add63be0, type: 3}
@@ -2246,6 +2334,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1108734309}
     m_Modifications:
+    - target: {fileID: 378779694613860676, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1735293236}
     - target: {fileID: 378779695306291011, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
       propertyPath: m_Name
       value: CantinaHotspot
@@ -2338,6 +2430,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 9146024212887953586, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 753718976}
+    - target: {fileID: 9146024212887953586, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: tourNext
+      value: 
+      objectReference: {fileID: 1472821284}
+    - target: {fileID: 9146024212887953586, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
+      propertyPath: tourCurrent
+      value: 
+      objectReference: {fileID: 1108734304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2280dd158abc234aadba3c88edd4b1e, type: 3}
 --- !u!1001 &1150115680975512011

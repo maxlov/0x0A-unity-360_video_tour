@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class UIOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private Vector3 cachedScale;
-    private float scaleFactor = 1.25f;
+    private float scaleFactor = 1.10f;
 
     void Start()
     {
